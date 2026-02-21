@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Justin Silvius - Fitness Goals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Reset & Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; background: #0a0a0a; color: #ffffff; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Hero Section with Quote Image */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .hero p {
+            font-size: 22px;
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+        .hero a.button {
+            padding: 15px 40px;
+            background: #f87171;
+            color: #ffffff;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .hero a.button:hover {
+            background: #ef4444;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .card {
+            background: #1f2937;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Fitness Goals */
+        .goals {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .goal {
+            background: #111827;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 10px;
+            flex: 1 1 200px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #f87171;
+        }
+        .goal span {
+            display: block;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        /* Photo Section */
+        .photo-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .photo-section img {
+            max-width: 100%;
+            border-radius: 12px;
+            border: 3px solid #f87171;
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0a0a;
+            padding: 30px 20px;
+            text-align: center;
+            color: #94a3b8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 45px; }
+            .hero p { font-size: 18px; }
+            h2 { font-size: 28px; }
+            .goal { font-size: 20px; }
+            .goal span { font-size: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section with Quote Image -->
+    <div class="hero">
+        <h1>Justin Silvius</h1>
+        <p>Gym Enthusiast • Runner • Strength Seeker</p>
+        <a href="#about" class="button">Learn More</a>
+    </div>
+
+    <!-- About Me -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            Hi, I'm Justin. I love pushing my limits in the gym and on the road. My goal is to build strength, endurance, and mental toughness — one workout at a time.
+        </div>
+    </section>
+
+    <!-- Fitness Goals -->
+    <section id="goals">
+        <h2>Goals</h2>
+        <div class="goals">
+            <div class="goal">
+                <span>550 lb</span>
+                Deadlift
+            </div>
+            <div class="goal">
+                <span>50 mi</span>
+                Ultramarathon
+            </div>
+        </div>
+    </section>
+
+    <!-- Middle Photo Section (Gym) -->
+    <section class="photo-section">
+        <img src="gym.jpg" alt="Gym workout photo">
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            Email: <a href="mailto:your@email.com">your@email.com</a><br>
+            Instagram: <a href="#">instagram.com/justinsilvius</a><br>
+            Strava: <a href="#">strava.com/athletes/justinsilvius</a>
+        </div>
+    </section>
+
+    <!-- Bottom Photo Section (Running/Outdoor) -->
+    <section class="photo-section">
+        <img src="running.jpg" alt="Running outdoor photo">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Justin Silvius
+    </footer>
+
+</body>
+</html>
